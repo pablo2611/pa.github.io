@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Música Personal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Estilos de la barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Estilos del bloque de álbumes */
+        .album {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transform-style: preserve-3d; /* Agrega esta propiedad para mantener la perspectiva en los elementos hijos */
+            transition: transform 0.3s ease; /* Agrega una transición para que el cambio sea suave */
+        }
+
+        .album:hover {
+            transform: perspective(800px) rotateX(10deg) rotateY(-10deg); /* Cambia los valores de rotación según desees */
+        }
+
+        .album h3 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .album p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilos para la imagen de la nota musical */
+        .nota-musical {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            transform: rotate(20deg);
+            opacity: 0.7;
+            transition: transform 0.3s ease;
+        }
+
+        .nota-musical:hover {
+            transform: rotate(0deg) scale(1.2);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Página de Música Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="novedades">
+            <h2>Novedades</h2>
+            <div class="album">
+                <h3>DURO Pablitoh-Medellin Mails Dino</h3>
+                <p>Produce DJAYB.</p>
+                <!-- Agrega el widget de Spotify usando la URL de tu canción o álbum -->
+                <iframe src="https://open.spotify.com/embed/track/25RO3U4DOJtW7Lptxj82BG?si=c0b59e3c00b34223" width="100%" height="315" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <!-- Repite el bloque 'album' para más álbumes si es necesario -->
+        </section>
+        <section id="artistas">
+            <h2>Artista</h2>
+            <p>Pablitoh Medellín es un joven y enérgico músico. A pesar de su corta edad, Pablitoh ha demostrado un talento y una pasión innatos para la música, ganándose el reconocimiento y la admiración de muchos en la industria musical. Desde pequeño, Pablitoh mostró una inclinación hacia la música, aprendiendo a tocar varios instrumentos y creando sus propias melodías. Su talento se manifiesta en su capacidad para fusionar géneros y estilos musicales tradicionales con contemporáneos, creando un sonido único y cautivador. Pablitoh es conocido por su habilidad para crear canciones que conectan con la audiencia a un nivel emocional. Sus letras, a menudo centradas en temas de amor, pérdida y esperanza, resuenan con su público y han ayudado a establecer su lugar en el panorama musical. Además de su talento musical, Pablitoh también es admirado por su dedicación y perseverancia. A pesar de los desafíos y obstáculos que ha enfrentado en su camino, nunca ha dejado que estos contratiempos le impidan seguir su pasión por la música. Con cada actuación y cada nueva canción, Pablitoh Medellín continúa inspirando a otros jóvenes músicos con su talento, su pasión y su dedicación a la música. Es un verdadero testimonio de lo que es posible cuando se persigue un sueño con determinación y pasión...</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto a llamar</h2>
+            <p>+50768459721...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pablitoh Medellin</p>
+    </footer>
+
+    <!-- Imagen de la nota musical -->
+    <img class="nota-musical" src="https://scontent.fpac1-1.fna.fbcdn.net/v/t1.6435-9/67970272_711297932657123_2153126814120148992_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IHdyOMRKffsAX8zLq5E&_nc_ht=scontent.fpac1-1.fna&oh=00_AfCvl5f015QGnHXOv8vedWSJubJznvtryKWZZyxbyRvlww&oe=64F3F8D9" alt="Nota Musical">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function rotateAlbum() {
+                const audioElement = document.querySelector("audio");
+
+                if (audioElement) {
+                    audioElement.addEventListener("play", () => {
+                        const albumElement = document.querySelector(".album");
+                        albumElement.style.transform = "perspective(800px) rotateX(10deg) rotateY(-10deg)";
+                    });
+
+                    audioElement.addEventListener("pause", () => {
+                        const albumElement = document.querySelector(".album");
+                        albumElement.style.transform = "none";
+                    });
+
+                    audioElement.addEventListener("timeupdate", () => {
+                        const albumElement = document.querySelector(".album");
+                        const currentTime = audioElement.currentTime;
+                        const duration = audioElement.duration;
+                        const percentage = (currentTime / duration) * 100;
+
+                        albumElement.style.transform = `perspective(800px) rotateX(10deg) rotateY(-10deg) rotateZ(${percentage}deg)`;
+                    });
+                }
+            }
+
+            rotateAlbum();
+        });
+    </script>
+</body>
+</html>
